@@ -13,6 +13,8 @@ const guiReducers = {
     scratchPaint: ScratchPaintReducer
 };
 
+console.log('Hello My Boy')
+
 export {
     GUI as default,
     AppStateHOC,
