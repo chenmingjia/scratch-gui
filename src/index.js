@@ -13,6 +13,8 @@ const guiReducers = {
     scratchPaint: ScratchPaintReducer
 };
 
+console.log('开始启动私有GUI')
+
 export {
     GUI as default,
     AppStateHOC,
