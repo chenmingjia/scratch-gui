@@ -23,7 +23,7 @@ const StopAllComponent = function (props) {
                 }
             )}
             draggable={false}
-            src={stopAllIcon}
+            src={'https://city.boolan.com/static/assets/stopAllIcon.svg'}
             title={title}
             onClick={onClick}
             {...componentProps}

@@ -23,7 +23,7 @@ const GreenFlagComponent = function (props) {
                 }
             )}
             draggable={false}
-            src={greenFlagIcon}
+            src={'https://city.boolan.com/static/assets/greenFlagIcon.svg'}
             title={title}
             onClick={onClick}
             {...componentProps}

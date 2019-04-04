@@ -1,0 +1,61 @@
+.saveWindows{
+    z-index: 99999;
+}
+.saveWindowsTwoImg{
+    width:461px;
+    height:59px;
+    position: fixed;
+    top: 260px;
+    right: 50%;
+}
+.saveWindowsTwoImg img:nth-child(1){
+    width:129px;
+    height:186px;
+    float: left;
+}
+.saveWindowsTwoImg img:nth-child(2){
+    width:17px;
+    height:17px;
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.saveWindowsImg{
+    width:461px;
+    height:159px;
+    box-shadow:0 3px 12px 1px rgba(4,0,0,0.4);
+    border-radius: 5px;
+    background-color: rgb(255 ,171, 25);
+    position: fixed;
+    top:380px;
+    right: 50%;
+    padding:33px 31px;
+}
+.saveWindowsImg div:nth-child(1){
+    float: left;
+    margin-right: 18px;
+}
+.saveWindowsImg div:nth-child(1) span{
+   display: block;
+    font-size:16px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+.saveWindowsImg div:nth-child(1) span:nth-child(1){
+    margin-bottom: 30px;
+    font-size:18px;
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+}
+.saveWindowsImg div:nth-child(2) img{
+    width:105px;
+    height:105px;
+}
+.saveWindowsIcon{
+    position: fixed;
+    bottom: 67px;
+    right: 607px;
+    cursor: pointer;
+}

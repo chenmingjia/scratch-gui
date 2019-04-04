@@ -30,6 +30,7 @@ import Alerts from '../../containers/alerts.jsx';
 import DragLayer from '../../containers/drag-layer.jsx';
 import ConnectionModal from '../../containers/connection-modal.jsx';
 import TelemetryModal from '../telemetry-modal/telemetry-modal.jsx';
+import SaveWindow from '../saveWindow/saveWindow.jsx'
 
 import layout, {STAGE_SIZE_MODES} from '../../lib/layout-constants';
 import {resolveStageSize} from '../../lib/screen-utils';
@@ -173,9 +174,9 @@ const GUIComponent = props => {
                 {tipsLibraryVisible ? (
                     <TipsLibrary />
                 ) : null}
-                {cardsVisible ? (
+                {/* {cardsVisible ? (
                     <Cards />
-                ) : null}
+                ) : null} */}
                 {alertsVisible ? (
                     <Alerts className={styles.alertsContainer} />
                 ) : null}
@@ -225,6 +226,7 @@ const GUIComponent = props => {
                 <Box className={styles.bodyWrapper}>
                     <Box className={styles.flexWrapper}>
                         <Box className={styles.editorWrapper}>
+                            <SaveWindow dispatch={props.dispatch}/>
                             <Tabs
                                 forceRenderTabPanel
                                 className={tabClassNames.tabs}

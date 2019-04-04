@@ -156,15 +156,15 @@ class LoaderComponent extends React.Component {
                     <div className={styles.blockAnimation}>
                         <img
                             className={styles.topBlock}
-                            src={topBlock}
+                            src={'https://city.boolan.com/static/assets/topBlock.svg'}
                         />
                         <img
                             className={styles.middleBlock}
-                            src={middleBlock}
+                            src={'https://city.boolan.com/static/assets/middleBlock.svg'}
                         />
                         <img
                             className={styles.bottomBlock}
-                            src={bottomBlock}
+                            src={'https://city.boolan.com/static/assets/bottomBlock.svg'}
                         />
                     </div>
                     <div className={styles.title}>

@@ -16,7 +16,7 @@ import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
 
-import scratchLogo from '../menu-bar/scratch-logo.svg';
+import scratchLogo from '../menu-bar/aolin.png';
 import styles from './stage-header.css';
 
 const messages = defineMessages({
@@ -88,7 +88,7 @@ const StageHeaderComponent = function (props) {
                     alt={props.intl.formatMessage(messages.unFullStageSizeMessage)}
                     className={styles.stageButtonIcon}
                     draggable={false}
-                    src={unFullScreenIcon}
+                    src={'https://city.boolan.com/static/assets/unFullScreenIcon.svg'}
                     title={props.intl.formatMessage(messages.fullscreenControl)}
                 />
             </Button>

@@ -62,7 +62,9 @@ const ProjectSaverHOC = function (WrappedComponent) {
             if (this.props.projectChanged && !prevProps.projectChanged) {
                 this.scheduleAutoSave();
             }
+            console.log('ProjectSaverHOC', '开始上传', this.props.isUpdating && !prevProps.isUpdating)
             if (this.props.isUpdating && !prevProps.isUpdating) {
+                //开始上传
                 this.updateProjectToStorage();
             }
             if (this.props.isCreatingNew && !prevProps.isCreatingNew) {
@@ -225,7 +227,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
                     body: savedVMState,
                     // If we set json:true then the body is double-stringified, so don't
                     headers: {
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${this.props.token}`
                     },
                     withCredentials: true
                 };
@@ -398,7 +401,8 @@ const ProjectSaverHOC = function (WrappedComponent) {
             projectChanged: state.scratchGui.projectChanged,
             reduxProjectId: state.scratchGui.projectState.projectId,
             reduxProjectTitle: state.scratchGui.projectTitle,
-            vm: state.scratchGui.vm
+            vm: state.scratchGui.vm,
+            token: state.user && state.user.user ? state.user.user.token : ''
         };
     };
     const mapDispatchToProps = dispatch => ({
